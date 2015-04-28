@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Customer.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LayoutController">
+	<children>
+		<HBox layoutX="24.0" layoutY="72.0" prefHeight="27.0" prefWidth="554.0" spacing="20.0">
+			<children>
+				<Label text="First Name">
+					<padding>
+						<Insets top="3.0" />
+					</padding>
+				</Label>
+				<TextField prefHeight="17.0" prefWidth="101.0" />
+				<Label text="Middle Initial">
+					<padding>
+						<Insets top="3.0" />
+					</padding>
+				</Label>
+				<TextField prefHeight="17.0" prefWidth="48.0" />
+				<Label text="Last Name">
+					<padding>
+						<Insets top="3.0" />
+					</padding>
+				</Label>
+				<TextField prefHeight="17.0" prefWidth="110.0" />
+			</children>
+		</HBox>
+		<HBox layoutX="12.0" layoutY="119.0" prefHeight="27.0" prefWidth="444.0" spacing="20.0">
+			<children>
+				<Label text="Gender" />
+				<ButtonBar prefHeight="40.0" prefWidth="200.0">
+					<buttons>
+						<RadioButton mnemonicParsing="false" text="Male" />
+						<RadioButton mnemonicParsing="false" text="Female" />
+					</buttons>
+				</ButtonBar>
+			</children>
+			<padding>
+				<Insets left="10.0" top="5.0" />
+			</padding>
+		</HBox>
+		<HBox layoutX="13.0" layoutY="164.0" prefHeight="27.0" prefWidth="503.0" spacing="20.0">
+			<children>
+				<Label prefHeight="20.0" prefWidth="47.0" text="Address">
+					<padding>
+						<Insets top="3.0" />
+					</padding>
+				</Label>
+				<TextField prefHeight="37.0" prefWidth="241.0" />
+				<Label text="City" />
+				<TextField prefHeight="37.0" prefWidth="103.0" />
+			</children>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</HBox>
+		<HBox layoutX="13.0" layoutY="204.0" prefHeight="46.0" prefWidth="503.0" spacing="20.0">
+			<children>
+				<Label text="State">
+					<padding>
+						<Insets top="3.0" />
+					</padding>
+				</Label>
+				<Label text="Zip Code">
+					<padding>
+						<Insets top="3.0" />
+					</padding>
+				</Label>
+				<TextField prefHeight="25.0" prefWidth="79.0" />
+			</children>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</HBox>
+		<ButtonBar layoutX="197.0" layoutY="303.0" prefHeight="33.0" prefWidth="207.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="303.0">
+			<buttons>
+				<Button mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="Save" />
+				<Button mnemonicParsing="false" text="Clear" />
+			</buttons>
+		</ButtonBar>
+		<ComboBox id="stateCB" layoutX="15.0" layoutY="254.0" prefHeight="33.0" prefWidth="162.0" promptText="Select a State" />
+	</children>
+</AnchorPane>
